@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ark Services — FedEx Contractor</title>
+  <meta name="description" content="Ark Services LLC — FedEx Ground contractor serving the Carolinas. Apply to drive, access the Driver Portal, or get in touch." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ───────────────── NAVBAR ───────────────── -->
+  <header class="navbar">
+    <a href="#" class="nav-logo">
+      <img src="assets/logo.png" alt="Ark Services" />
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#openings">Job Openings</a>
+      <a href="#contact">Contact</a>
+      <a href="https://frontend-pearl-three-31.vercel.app/driver-portal" target="_blank" rel="noopener">Driver Portal</a>
+      <a href="https://frontend-pearl-three-31.vercel.app" target="_blank" rel="noopener" class="nav-cta">RoutePulse</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ───────────────── HERO ───────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">FedEx Ground Contractor &mdash; The Carolinas</p>
+      <h1>Delivering excellence,<br>every single day.</h1>
+      <p class="hero-sub">Ark Services LLC operates FedEx Ground routes across Greenville, New Hill, and Wilson, NC — built on reliable drivers and a commitment to service.</p>
+      <div class="hero-actions">
+        <a href="#openings" class="btn btn-primary">View Job Openings</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── QUICK LINKS ───────────────── -->
+  <section class="cards" id="openings">
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg>
+        </div>
+        <h2>Job Openings</h2>
+        <p>We're always looking for dependable drivers. Browse current openings and apply today.</p>
+        <a href="#" class="btn btn-primary" id="jobBoardLink">View Openings</a>
+        <!-- TODO: Replace href="#" with your job board URL (Indeed, LinkedIn, etc.) -->
+      </div>
+
+      <div class="card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h2>Contact Us</h2>
+        <p>Have a question or need to reach our team? Fill out the form below and we'll get back to you.</p>
+        <a href="#contact" class="btn btn-primary">Send a Message</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h2>Driver Portal</h2>
+        <p>Clock in, request time off, check your schedule, and view your performance stats.</p>
+        <a href="https://frontend-pearl-three-31.vercel.app/driver-portal" target="_blank" rel="noopener" class="btn btn-primary">Open Portal</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h2>RoutePulse</h2>
+        <p>Intelligent scheduling and dispatch management for Ark Services operations.</p>
+        <a href="https://frontend-pearl-three-31.vercel.app" target="_blank" rel="noopener" class="btn btn-primary">Open RoutePulse</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────── CONTACT FORM ───────────────── -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-header">
+        <h2>Get in Touch</h2>
+        <p>Whether you're interested in driving for us or have a general question, we'd love to hear from you.</p>
+      </div>
+
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/XXXXXXXX"
+        method="POST"
+        class="contact-form"
+        novalidate
+      >
+        <!-- TODO: Replace XXXXXXXX with your Formspree form ID from formspree.io -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New message from go-ark.services" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      </form>
+
+      <div id="formSuccess" class="form-success" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <h3>Message sent!</h3>
+        <p>Thanks for reaching out. We'll get back to you as soon as possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="assets/logo.png" alt="Ark Services" class="footer-logo" />
+      <p class="footer-copy">&copy; 2026 Ark Services LLC. All rights reserved.</p>
+      <p class="footer-sub">FedEx Ground Contractor &mdash; Greenville, New Hill &amp; Wilson, NC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
